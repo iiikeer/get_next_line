@@ -6,7 +6,7 @@
 /*   By: iullibar <iullibar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:59:25 by iullibar          #+#    #+#             */
-/*   Updated: 2024/12/09 09:36:31 by iullibar         ###   ########.fr       */
+/*   Updated: 2024/12/09 11:16:11 by iullibar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 # endif
 
 char	*get_next_line(int fd);
-char	*ft_read_next_line(int fd, char *next_line);
+char	*read_line(int fd, char *buffer, char *line);
 char	*get_line(char *next_line, char *buffer);
 void	clean_line(char *next_line);
 char	*ft_strchr(const char *s, int c);
