@@ -6,7 +6,7 @@
 /*   By: iullibar <iullibar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 15:17:45 by iullibar          #+#    #+#             */
-/*   Updated: 2024/10/10 12:33:55 by iullibar         ###   ########.fr       */
+/*   Updated: 2024/12/09 11:09:37 by iullibar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,20 @@
 int	main(void)
 {
 	int		fd;
+	int		i = 0;
 	char	*string;
 
-	fd = open ("test1.txt", O_RDONLY);
+	fd = 0;
 	string = get_next_line(fd);
-	while (string != NULL)
+	while (i < 5)
 	{
 		printf("%s", string);
 		free(string);
+		i ++;
 		string = get_next_line(fd);
 	}
+	printf("%s", string);
+	free(string);
 	close(fd);
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: iullibar <iullibar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/04 14:59:25 by iullibar          #+#    #+#             */
-/*   Updated: 2024/10/10 17:20:37 by iullibar         ###   ########.fr       */
+/*   Updated: 2024/12/09 09:36:31 by iullibar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@
 
 char	*get_next_line(int fd);
 char	*ft_read_next_line(int fd, char *next_line);
-char	*ft_get_line(const char *next_line);
-char	*ft_clean_line(char *next_line);
+char	*get_line(char *next_line, char *buffer);
+void	clean_line(char *next_line);
 char	*ft_strchr(const char *s, int c);
 size_t	ft_strlen(const char *str);
-char	*ft_strjoin(char *s1, char *s2);
+void	ft_strcpy(char *dst, char *src, size_t dstsize);
 
 #endif
